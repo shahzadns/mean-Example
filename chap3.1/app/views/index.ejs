@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title><%= title %></title>
+    <title>MEAN</title>
 </head>
 <body>
-<p>Welcome to <%= title %> app</p>
+<p>Welcome to MEAN app</p>
+<div>
+    <h3>Users</h3>
+    <ol>
+        <li data-ng-repeat="user in users"> {{ user.name + ' ( ' + user.org + ' )' }} </li>
+    </ol>
+</div>
 </body>
 </html>

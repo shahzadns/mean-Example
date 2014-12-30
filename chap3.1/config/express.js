@@ -23,7 +23,8 @@ module.exports = function(){
     app.set('views', './app/views');
     app.set('view engine', 'ejs');
 
-    var routes  = require('../app/routes/index.server.routes');
-    routes(app);
+    require('../app/routes/index.server.routes')(app);
+    require('../app/routes/users.server.routes')(app);
+
     return app;
 };
